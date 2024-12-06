@@ -12,18 +12,25 @@ import java.sql.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
+import lombok.NonNull;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 
 public class Producto {
+
     private Integer id_producto;
+    @NonNull
     private String nombre_producto;
+    @NonNull
     private String categoria_producto;
+    @NonNull
     private Double precio;
+    @NonNull
     private Integer cantidad;
+    @NonNull
     private Date fecha_registro;
+    @NonNull
     private String estado;
 }
